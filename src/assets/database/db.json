@@ -1,0 +1,254 @@
+{
+    "displayList" : 
+    [
+            {
+                "appointment_time" : "Today @ 10:10 AM",
+                "advisor_name" : "Demo Advisor",
+                "customer_name" : "Paul Haeman",
+                "ref_id" : "SKJDBF37JSNFD",
+                "vehicle_name" : "2021 Dodge Careera Limited",
+                "vehicle_code" : "WBAKJDN7644",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Today @ 09:20 AM",
+                "advisor_name" : "One Advisor",
+                "customer_name" : "Sai Kumar",
+                "ref_id" : "DFLKGDNSKLNFFJ",
+                "vehicle_name" : "Hyundai Elantra",
+                "vehicle_code" : "WBAJSNDFKJI",
+                "progress_rating_count" : "0.8",
+                "progress_status" : "4",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Tomorrow @ 02:10 PM",
+                "advisor_name" : "New Test",
+                "customer_name" : "Durga Prasad",
+                "ref_id" : "JSDBFKJSBDKJFB",
+                "vehicle_name" : "2020 Tata Nexon",
+                "vehicle_code" : "WBADJNFJKOO",
+                "progress_rating_count" : "0.1",
+                "progress_status" : "1",
+                "progress_chips" : [
+                                    {"name" : "Synced"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Today @ 11:20 AM",
+                "advisor_name" : "Two Advisor",
+                "customer_name" : "Paul Kyling",
+                "ref_id" : "KJDFHJKDKNN",
+                "vehicle_name" : "Hyundai Verna",
+                "vehicle_code" : "WBADKNFIOD",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Today @ 12:50 PM",
+                "advisor_name" : "Three Advisor",
+                "customer_name" : "Simba Babu",
+                "ref_id" : "SKJDBFKJSBD",
+                "vehicle_name" : "Hyundai Santro",
+                "vehicle_code" : "WBADKNFIOD",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Tomorrow @ 06:50 PM",
+                "advisor_name" : "Four Test Advisor",
+                "customer_name" : "Mellisa Brown",
+                "ref_id" : "DKJFNGVKJDFNKJN",
+                "vehicle_name" : "2019 Porsche jinx",
+                "vehicle_code" : "WBAJSKBDKJVSD",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Today @ 06:50 PM",
+                "advisor_name" : "Five Test Advisor",
+                "customer_name" : "Kerlin Moka",
+                "ref_id" : "JSDBKJVBSJDBVKJSD",
+                "vehicle_name" : "2019 Lamborgini Hurrican",
+                "vehicle_code" : "WBASNDLKFNSDLKN",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Tomorrow @ 06:50 PM",
+                "advisor_name" : "Six Test Advisor",
+                "customer_name" : "Berlin Junae",
+                "ref_id" : "AHJSBDJKKKK",
+                "vehicle_name" : "2019 Tesla Model s",
+                "vehicle_code" : "WBANDCNDKNKCKK",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Today @ 08:50 PM",
+                "advisor_name" : "Seven Test Advisor",
+                "customer_name" : "Nala Jane",
+                "ref_id" : "SDJBJKSDBJJK",
+                "vehicle_name" : "2020 Tesla Model s",
+                "vehicle_code" : "WBANDCNDKSDSDCKK",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Today @ 03:30 PM",
+                "advisor_name" : "Eight Test Advisor",
+                "customer_name" : "Emily Huck",
+                "ref_id" : "SKJDBKJSDNCJKN",
+                "vehicle_name" : "2021 Tesla Model s",
+                "vehicle_code" : "WBAKJBSKJDCBJKSFC",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Today @ 05:30 PM",
+                "advisor_name" : "Nine Test Advisor",
+                "customer_name" : "Naina Gary",
+                "ref_id" : "KJSDNKJCNSKJD",
+                "vehicle_name" : "2020 Tesla Roadster",
+                "vehicle_code" : "WBAKJBJDCBJKSFC",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Tomorrow @ 05:20 PM",
+                "advisor_name" : "Ten Test Advisor",
+                "customer_name" : "Gary Kirsten",
+                "ref_id" : "SKDJBCKJSDNKC",
+                "vehicle_name" : "2020 Lamborghini Urus",
+                "vehicle_code" : "WBAKBJDCBJKSFC",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Today @ 05:20 PM",
+                "advisor_name" : "Eleven Test Advisor",
+                "customer_name" : "Virat kohli",
+                "ref_id" : "SKDJBCKJSDNKC",
+                "vehicle_name" : "Jeep Compass",
+                "vehicle_code" : "WBALSDLKMCLSDKM",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            },
+            {
+                "appointment_time" : "Tomorrow @ 05:25 PM",
+                "advisor_name" : "Eleven Test Advisor",
+                "customer_name" : "Rohit Sharma",
+                "ref_id" : "SKDJBCKJSDNKC",
+                "vehicle_name" : "Volvo s60",
+                "vehicle_code" : "WBALSDLKMCLSJHBKM",
+                "progress_rating_count" : "0.2",
+                "progress_status" : "2",
+                "progress_chips" : [
+                                    {"name" : "In Progress"},
+                                    {"name" : "Wait At Dealer"},
+                                    {"name" : "Drop Off"}
+                                    ]
+            }
+    ],
+    "filter_advisors_list" : [
+        { 
+            "name" : "Advisor Name",
+            "value":"ADV0001"
+        },
+        { 
+            "name" : "Advisor",
+            "value":"ADV0002"
+        },
+        { 
+            "name" : "Advisor Longer Name",
+            "value":"ADV0003"
+        },
+        { 
+            "name" : "Advisor Shorter Name",
+            "value":"ADV0004"
+        },
+        { 
+            "name" : "Advisor Full Name",
+            "value":"ADV0005"
+        }
+    ],
+    "filter_transport_list": [
+        {
+            "name":"By Truck",
+            "value":"TRANS0001"
+        },
+        {
+            "name":"By Van",
+            "value":"TRANS0002"
+        },
+        {
+            "name":"By Train",
+            "value":"TRANS0003"
+        },
+        {
+            "name":"By Flight",
+            "value":"TRANS0004"
+        }
+    ]
+}

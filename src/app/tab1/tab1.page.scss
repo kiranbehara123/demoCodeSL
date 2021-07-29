@@ -1,0 +1,125 @@
+.cardMainRefPanel_left {
+    padding:  5px 10px 5px 10px;
+    border-bottom-left-radius:  5px ;
+    border-bottom-right-radius: 5px ;
+    border-top-left-radius:  5px ;
+    border-top-right-radius: 5px ;
+    // background-color: #dadede;
+    color: black;
+    font-size: 14px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: start;
+}
+
+.cardMainRefPanel_right {
+    padding:  5px 10px 5px 10px;
+    border-bottom-left-radius:  5px ;
+    border-bottom-right-radius: 5px ;
+    border-top-left-radius:  5px ;
+    border-top-right-radius: 5px ;
+    // background-color: #dadede;
+    color: black;
+    font-size: 14px;
+    margin-right: 2px;
+    margin-left: 2px;
+    text-align: right;
+}
+
+.ionCardHeaderPadSmall {
+    padding: 5px !important;
+}
+
+.customer_name{
+    font-weight: 600;
+    font-size :x-large;
+    color: rgb(29, 12, 12);
+}
+.vehicle_name{
+    font-weight: 600;
+    font-size: larger;
+    color: rgb(29, 12, 12);
+}
+
+.appointmentCardGrid{
+    height: 220px;
+    // box-shadow: 1px 1px 1px 1px rgb(148, 146, 146);
+    box-shadow: 1px 1px 5px 2px #949494;
+    padding: 5px !important;
+    margin: 3px !important;
+}
+.appointmentCardTable{
+    height: 180px;
+    // box-shadow: 1px 1px 1px 1px rgb(148, 146, 146);
+    box-shadow: 1px 1px 5px 2px #949494;
+    padding: 5px !important;
+    margin: 3px !important;
+}
+.noDataFound{
+    height: 100;
+    // box-shadow: 1px 1px 1px 1px rgb(148, 146, 146);
+    box-shadow: 1px 1px 5px 2px #949494;
+    padding: 5px !important;
+    margin: 3px !important;
+    text-align: center;
+    font-size: larger;
+    border: 1px solid red;
+    color: red;
+}
+.fitContentClass {
+    width: fit-content !important;
+}
+.toasterClass{
+    text-align: center !important;
+}
+
+.appointment_time_class{
+    background: #b1b1b166;
+    color: black;
+    font-weight: 500;
+    font-size: medium;
+    padding: 2px 0px 2px 3px;
+    border-bottom-left-radius:  5px ;
+    border-bottom-right-radius: 5px ;
+    border-top-left-radius:  5px ;
+    border-top-right-radius: 5px ;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.icon_card {
+     font-size: x-large;
+     
+}
+
+.textLeft {
+     text-align: left !important;
+}
+.textRight {
+     text-align: right !important;
+}
+.textCenter{
+    text-align: center !important;
+}
+.padTop10{
+     padding-top: 10px !important;
+}
+.progressBarHeight{
+    height: 5px !important;
+}
+.lineHeight{
+    line-height: 0;
+}
+.subHeaderCardClass{
+    margin: 0px !important;
+    padding: 0px !important
+}
+.subHeader{
+    // position: fixed;
+    width: 100%;
+    // background: grey;
+    // z-index: 1;
+    // color: white;
+}

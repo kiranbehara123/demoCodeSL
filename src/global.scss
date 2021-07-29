@@ -1,0 +1,89 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.textLeft {
+    text-align: left !important;
+}
+.textRight {
+    text-align: right !important;
+}
+.textCenter{
+   text-align: center !important;
+}
+.padTop10{
+    padding-top: 10px !important;
+}
+.loginHeaderLabel{
+    color: orange;
+    font-size: x-large;
+    font-weight: 600;
+}
+.loginCard {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  box-shadow: 2px 2px 15px 2px rgb(88, 82, 82);
+}
+.globalBgColor{
+    background: #d6d6d6b0;
+}
+.devStagesClasses{
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+}
+.companyNameLabel{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+    border: 5px solid orange;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translate(-50%, -50%);
+    width: 400px; 
+}
+.noPageFound{
+    color: red;
+    background: #fbefef;
+    border-left: 10px solid red;
+    padding-left: 10px;
+    height: 50px;
+    line-height: 3;
+    font-weight: 600;
+}

@@ -1,0 +1,43 @@
+<!-- <ion-content> -->
+    <ion-label class="companyNameLabel">Smart Lane</ion-label>
+
+    <ion-card class="loginCard">
+            <ion-card-header class="textCenter loginHeaderLabel">Login</ion-card-header>
+            <ion-card-content>
+                <ion-item>
+                    <ion-label position="floating">User ID</ion-label>
+                    <ion-input [(ngModel)]="userId"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Password</ion-label>
+                    <ion-input type="password" [(ngModel)]="password"></ion-input>
+                </ion-item>
+                    <ion-row>
+                        <ion-col class="textRight"><ion-button color="dark" (click)="loginUser()">Login</ion-button></ion-col>
+                        <ion-col class="textLeft"><ion-button color="medium" (click)="resetData()">Reset</ion-button></ion-col>
+                    </ion-row>
+                <ion-item *ngIf="infoMessage!=''">
+                    <ion-label color="{{infoMessageColor}}">{{infoMessage}}</ion-label>
+                </ion-item>
+            </ion-card-content>
+    </ion-card>
+    <ion-card class="devStagesClasses">
+        <ion-segment >
+            <ion-segment-button value="mock">
+               <ion-label>Mock</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="dev">
+                <ion-label>Dev</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="beta">
+                <ion-label>Beta</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="staging">
+                <ion-label>Staging</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="prod">
+                <ion-label>Prod</ion-label>
+            </ion-segment-button>
+          </ion-segment>
+    </ion-card>
+<!-- </ion-content> -->

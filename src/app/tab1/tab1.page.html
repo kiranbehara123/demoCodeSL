@@ -1,0 +1,219 @@
+<ion-menu side="end" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Filters</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item >
+        <ion-select class="fitContentClass" interface="popover" placeholder="Advisor" [(ngModel)]="advisor_code" (ionChange)="addFilterBadgeCount()">
+          <ion-select-option  *ngFor="let advisor of filter_advisors_list" value="{{advisor.value}}">{{advisor.name}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item > 
+        <ion-select class="fitContentClass" interface="popover" placeholder="Transportation" [(ngModel)]="transport_code" (ionChange)="addFilterBadgeCount()">
+          <ion-select-option  *ngFor="let transport of filter_transport_list" value="{{transport.value}}">{{transport.name}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item><ion-input type="date" [(ngModel)]="filtered_date" (ionChange)="addFilterBadgeCount()"></ion-input></ion-item>
+      <ion-item>
+        <ion-toggle color="warning"></ion-toggle>Group By Name
+      </ion-item>
+      <ion-item>
+        <ion-toggle color="warning"></ion-toggle>No Shows
+      </ion-item>
+      <ion-item>
+        <ion-row>
+          <ion-col> <ion-button expand="block" size="medium" shape="round" fill="solid" color="primary" (click)="applyFilters()">Apply</ion-button></ion-col>
+          <ion-col> <ion-button expand="block" size="medium" shape="round" fill="solid" color="danger" (click)="clearFilters()">Clear</ion-button></ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<ion-router-outlet id="main"></ion-router-outlet>
+<ion-router-outlet name="new"></ion-router-outlet>
+
+
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Smart Lane Demo
+      <ion-icon style="float: right;cursor: pointer;"  (click)="logout()" name="log-out"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+    <ion-toolbar>
+      <ion-tabs>
+        <ion-tab-bar slot="top">
+          <ion-tab-button tab="appointments">
+            <ion-icon name="calendar"></ion-icon>
+            <ion-label>Appointments</ion-label>
+          </ion-tab-button>
+          <ion-tab-button tab="openRepairOrder">
+            <ion-icon name="car"></ion-icon>
+            <ion-label>Open Repair Orders</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+</ion-header>
+
+<ion-header> 
+  <ion-toolbar>
+    <ion-row class="subHeader"> 
+      <ion-col size-md="3" size-sm="3">
+        <ion-card class="subHeaderCardClass">
+          <ion-segment color="primary" (ionChange)="changeView($event)">
+            <ion-segment-button value="gridView">
+              <ion-icon name="apps-outline"></ion-icon>
+            </ion-segment-button>
+            <ion-segment-button value="tableView">
+              <ion-icon name="list"></ion-icon>
+            </ion-segment-button>
+          </ion-segment>
+        </ion-card>
+      </ion-col>
+      <ion-col size-md="3" size-sm="3" >
+        <ion-button expand="block" size="small" shape="round" fill="clear" (click)="openFilters()"><ion-icon name="filter"></ion-icon>Filters<sup><ion-badge color="primary">{{filterBadgeCount}}</ion-badge> </sup> </ion-button>
+        <!-- <ion-button expand="block" size="small" shape="round" fill="clear" (click)="showFilters = !showFilters;"><ion-icon name="filter"></ion-icon>Filters<sup><ion-badge color="primary">{{filterBadgeCount}}</ion-badge> </sup> </ion-button> -->
+      </ion-col>
+      <ion-col size-md="5" size-sm="5">
+        <ion-searchbar showCancelButton="never" autocorrect="on" placeholder="Search Customer"  [(ngModel)]="searchText" (ionInput)="filterData($event)"  debounce="2000"> </ion-searchbar>
+      </ion-col>
+      <ion-col size-md="1" size-sm="1">
+        <ion-button expand="block" size="small" shape="round" fill="solid">Scan</ion-button>
+      </ion-col>
+  </ion-row>
+  </ion-toolbar>
+  <ion-toolbar *ngIf="showFilters"> 
+      <ion-row class="subHeader" >
+        <ion-col size-md="3" size-sm="3">
+          <ion-item >
+            <ion-select class="fitContentClass" interface="popover" placeholder="Advisor" [(ngModel)]="advisor_code" (ionChange)="addFilterBadgeCount()">
+              <ion-select-option  *ngFor="let advisor of filter_advisors_list" value="{{advisor.value}}">{{advisor.name}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size-md="2" size-sm="2">
+          <ion-item > 
+            <ion-select class="fitContentClass" interface="popover" placeholder="Transportation" [(ngModel)]="transport_code" (ionChange)="addFilterBadgeCount()">
+              <ion-select-option  *ngFor="let transport of filter_transport_list" value="{{transport.value}}">{{transport.name}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size-md="2" size-sm="2"><ion-input type="date" [(ngModel)]="filtered_date" (ionChange)="addFilterBadgeCount()"></ion-input></ion-col>
+        <ion-col size-md="2" size-sm="2">
+          <ion-row><ion-toggle color="warning"></ion-toggle></ion-row>
+          <ion-row>Group By Name</ion-row>
+        </ion-col>
+        <ion-col size-md="2" size-sm="2">
+            <ion-row><ion-toggle color="warning"></ion-toggle></ion-row>
+            <ion-row>No Shows</ion-row>
+        </ion-col>
+        <ion-col size-md="1" size-sm="1">
+          <ion-button expand="block" size="small" shape="round" fill="solid" color="danger" (click)="clearFilters()">Clear</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+        <ion-grid *ngIf="noDataFlag && (enableTableView || !enableTableView)"> 
+             <ion-card class="noDataFound">
+                    Oops!...No Data Found 
+               </ion-card>
+        </ion-grid>
+
+
+        <ion-grid *ngIf="!enableTableView">
+            <ion-row>
+              <ion-col *ngFor="let data of displayList;let i= index" size="6">
+                <ion-card class="appointmentCardGrid">
+                      <ion-row>
+                          <ion-col class="textLeft">{{data?.appointment_time}}</ion-col>
+                          <ion-col class="textRight">{{data?.advisor_name}}</ion-col>
+                      </ion-row>
+                      <ion-row>
+                          <ion-col >
+                              <span class="customer_name">{{data?.customer_name}}</span>
+                              <br/>
+                              {{data?.ref_id}}
+                          </ion-col>
+                      </ion-row>
+                      <ion-row>
+                          <ion-col >
+                              <span class="vehicle_name">{{data?.vehicle_name}}</span>
+                              <br/>
+                              {{data?.vehicle_code}}
+                          </ion-col>
+                      </ion-row>
+                      <ion-row class="padTop10 lineHeight textCenter">
+                          <ion-col size="10">
+                              <ion-progress-bar color="success" class="progressBarHeight" [value]="data?.progress_rating_count" ></ion-progress-bar>
+                          </ion-col>
+                          <ion-col size="2">{{data?.progress_status}}/5</ion-col>
+                      </ion-row>
+                      <ion-row class="padTop10">
+                          <ion-chip *ngFor="let progressChipValue of data?.progress_chips">
+                            <ion-label>{{progressChipValue?.name}}</ion-label>
+                          </ion-chip>
+                      </ion-row>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          <ion-grid *ngIf="enableTableView">
+            <ion-row *ngFor="let data of displayList" > 
+               <ion-col>
+                <ion-card class="appointmentCardTable">
+                        <ion-row>
+                            <ion-col class="textLeft">{{data?.appointment_time}}</ion-col>
+                            <ion-col class="textRight">{{data?.advisor_name}}</ion-col>
+                        </ion-row>
+                        <ion-row>
+                          <ion-col size="6" >
+                            <span class="customer_name">{{data?.customer_name}}</span><br/>{{data?.ref_id}}
+                          </ion-col>
+                          <ion-col size="6" >
+                            <span class="vehicle_name">{{data?.vehicle_name}}</span><br/>{{data?.vehicle_code}}
+                          </ion-col>
+                      </ion-row>
+                        <ion-row class="padTop10 lineHeight textCenter">
+                            <ion-col size="10">
+                                <ion-progress-bar color="success" class="progressBarHeight" [value]="data?.progress_rating_count" ></ion-progress-bar>
+                            </ion-col>
+                            <ion-col size="2">{{data?.progress_status}}/5</ion-col>
+                        </ion-row>
+                        <ion-row class="padTop10">
+                            <ion-chip *ngFor="let progressChipValue of data?.progress_chips">
+                              <ion-label>{{progressChipValue?.name}}</ion-label>
+                            </ion-chip>
+                        </ion-row>
+                  </ion-card>
+               </ion-col>
+            </ion-row>
+          </ion-grid>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content
+        loadingSpinner="lines"
+        loadingText="Loading More...Please wait">
+      </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+ 
+ </ion-content>
+
+
+ 
+
+
