@@ -1,6 +1,8 @@
 # Smart Lane Demo Code Structure and working
 SmartLane Demo Code and working (master branch)
 
+**Please check the master branch for code overview.**
+
 I created this project, executed it in my local machine, Android Studio and Xcode by using the following commands
 
 project creation: ionic start barcodeScannerAllNew tabs
