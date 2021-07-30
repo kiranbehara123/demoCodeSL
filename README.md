@@ -1,4 +1,4 @@
-# demoCodeSL
+# Smart Lane Demo Code Structure and working
 SmartLane Demo Code and working (master branch)
 
 I created this project, executed it in my local machine, Android Studio and Xcode by using the following commands
