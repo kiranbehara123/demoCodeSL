@@ -34,3 +34,5 @@ Steps for running project in android studio (simulator):
 7) Filters section is only available for authorised users (mani, sobhan, kiran) , filters can be opened in two ways(side nav and show/hide grid), one view can be    confirmed based on the requirements 
 8) Wild card routing has also been implemented incase of an unknown page pops up
 9) Logout/Signout button is present at the top right corner.
+
+Deployed this application in firebase and can check the project by clicking on the followin link :   https://barcodescanner-2ce5b.web.app/
